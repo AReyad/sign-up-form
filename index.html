@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="left">
+            <div class="logo-container">
+            <div>
+                <img src="./assets/imgs/lemon.png" alt="Illustrated Lemon" class="logo-img">
+                <h1>Lemon</h1>
+            </div>
+        <span class="credit">Photo from <a href="https://www.flaticon.com/free-icon/lemon_9712328?term=lemon&page=1&position=21&origin=search&related_id=9712328">Flaticon</a></span>
+
+        </div>
+        <span class="credit">Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA">Unsplash</a></span>
+        </aside>
+        <main class="right">
+            <div class="pre-form">
+                <h2>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
+                <br>
+                Sign up <i>now</i> to get started.
+                </h2>
+                <p>You <i>know</i> you want to.</p>
+            </div>
+            <form action="#">
+                <div class="form-inner">
+                    <h2>Let's do this!</h2>
+                    <div class="flex-row">
+                        <label for="fname">
+                            First name
+                            <input type="text" pattern="[a-zA-Z]+" name="fname" id="fname" required>
+                            <p class="error-msg">*Required with alphabets only. (e.g. Sam)</p>
+                        </label>
+                        <label for="lname">
+                            Last name
+                            <input type="text" pattern="[a-zA-Z]+" name="lname" id="lname" required>
+                            <p class="error-msg">*Required with alphabets only. (e.g. Noah)</p>
+                        </label>
+                    </div>
+                    <div class="flex-row">
+                        <label for="email">
+                            Email
+                            <input type="email" name="email" id="email" required>
+                            <p class="error-msg">*Required (e.g. name@example.com)</p>
+                        </label>
+                        <label for="tel">
+                            Phone number
+                            <input type="tel" name="tel" id="tel" pattern="^\+(?:[0-9] ?){6,14}[0-9]$" required>
+                            <p class="error-msg">*Required (e.g. +1 212 555 0199)</p>
+                        </label>
+                    </div>
+                    <div class="flex-row">
+                        <label for="password">
+                            Password
+                            <input type="password" name="password" id="password" pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,12}$" required>
+                            <p class="error-msg">*Required between 8-12 chars. <br> *Must contain a number. <br> *Must contain a number a special char(@$!%*#?&).</p>
+                        </label>
+                        <label for="confirm-password">
+                            Confirm Password
+                            <input type="password" name="confirm-password" id="confirm-password" pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,12}$" required>
+                            <p class="error-msg">*Required between 8-12 chars. <br> *Must contain a number. <br> *Must contain a special char(@$!%*#?&).</p>
+                       </label>
+                    </div>
+                </div>
+                <div class="form-outer">
+                    <button>Create Account</button>
+                     <p>Already have an account? <a href="#">Log in</a></p>
+                </div>
+            </form>
+        </div>
+        </main>
+    </div>
+</body>
+</html>
+
+
+
